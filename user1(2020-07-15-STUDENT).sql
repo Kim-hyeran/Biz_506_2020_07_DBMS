@@ -1,4 +1,5 @@
--- 
+-- user1 접속 화면입니다.
+
 SELECT st_dept FROM tbl_student
 GROUP BY st_dept;
 
@@ -13,6 +14,8 @@ st_age NUMBER(3)
 );
 
 DROP TABLE tbl_student;
+
+DROP TABLE tbl.dept;
 
 SELECT * FROM tbl_student;
 

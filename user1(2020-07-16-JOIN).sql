@@ -39,7 +39,9 @@ SELECT * FROM tbl_dept;
 /*
 1. 기본(*) SELECT 시작
 2. FROM절에 출력을 원하는 주table(master)를 작성
-3. 
+3. LEFT JOIN절에 보조 정보가 담긴 Table 작성
+4. ON절에 두 테이블의 연관관계를 설정하는 키 지칭
+5. SELECT에 필요한 칼럼 나열
 */
 SELECT st_num, st_name, st_dept, d_name, d_prof, d_tel, st_grade, st_tel, st_addr
 FROM tbl_student
