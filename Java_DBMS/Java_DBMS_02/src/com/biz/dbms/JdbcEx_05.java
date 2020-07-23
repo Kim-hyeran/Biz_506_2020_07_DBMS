@@ -57,6 +57,7 @@ public class JdbcEx_05 {
 					orderList=oService.selectAll();
 					oView.orderList(orderList);
 					OrderVO orderVO=oInput.detailView();
+					oView.orderDetailView(orderVO);
 				} else if(intMenu==3) {
 					if(!oInput.orderInsert()) {
 						break;
