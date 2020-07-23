@@ -81,7 +81,7 @@ WHERE o_num='O00001' AND o_cnum='C0032' AND o_pcode='P00001';
 -- 현재 일련번호 칼럼이 생성되어 있기 때문에 PK를 기준으로 값을 삭제할 수 있다.
 SELECT * FROM tbl_order;
 
-DELETE FROM tbl_order WHERE o_seq=14;
+DELETE FROM tbl_order WHERE o_seq=21;
 
 ALTER TABLE tbl_order ADD CONSTRAINT UQ_ORDER UNIQUE (o_num, o_cnum, o_pcode);
 
@@ -93,6 +93,7 @@ ALTER TABLE tbl_order ADD CONSTRAINT UQ_ORDER UNIQUE (o_num, o_cnum, o_pcode);
 */
 
 select * from tbl_order;
+commit;
 
 INSERT INTO tbl_order(o_seq, o_date, o_num, o_cnum, o_pcode)
     VALUES (SEQ_ORDER.nextval, '2020-07-21', 'O00003', 'C0022', 'P00001');
